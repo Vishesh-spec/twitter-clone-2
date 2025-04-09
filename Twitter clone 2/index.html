@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tweet-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tweet-box input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .tweet-box button {
+            padding: 10px;
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tweet-box button:hover {
+            background-color: #0d8aec;
+        }
+        #tweets {
+            text-align: left;
+        }
+        .tweet {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Twitter Clone</h1>
+        <div class="tweet-box">
+            <input type="text" id="tweetInput" placeholder="What's happening?">
+            <button onclick="postTweet()">Tweet</button>
+        </div>
+        <div id="tweets"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
